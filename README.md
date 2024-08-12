@@ -13,17 +13,17 @@ sudo a2enmod ssl  # Only if you need HTTPS
 #Configure Apache Virtual Hosts
 
 #Create Configuration for `www.your domain`:**
-sudo nano /etc/apache2/sites-available/your domain.conf
+sudo nano /etc/apache2/sites-available/your_domain.conf
 
 #Add the following content:(apache - Replace your domain and IP addresses)
 
    <VirtualHost *:80>
-       ServerName www.your domain
+       ServerName www.your_domain
        ProxyPreserveHost On
-       ProxyPass / http://Your Static IP:Port/
-       ProxyPassReverse / http://Your Static IP:Port/
-       ErrorLog ${APACHE_LOG_DIR}/your domain_error.log
-       CustomLog ${APACHE_LOG_DIR}/your domain_access.log combined
+       ProxyPass / http://Your_Static_IP:Port/
+       ProxyPassReverse / http://Your_Static_IP:Port/
+       ErrorLog ${APACHE_LOG_DIR}/your_domain_error.log
+       CustomLog ${APACHE_LOG_DIR}/your_domain_access.log combined
    </VirtualHost>
 
 #Proxy Server Port Forwarding
