@@ -1,4 +1,3 @@
-#Setting Up Apache as a Reverse Proxy on Ubuntu**
 **Install Apache and Required Modules**
 
 #Update Package List and Install Apache:**
